@@ -5,7 +5,7 @@ func StandardDeviation(data []int) int {
 }
 
 func Sqrt(n int) float64 {
-	for i := float64(0); i <= float64(n); i += 0.001 {
+	for i := float64(0); i <= float64(n); i += 0.00001 {
 
 		if int(i*i) == n {
 			return i
