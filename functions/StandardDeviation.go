@@ -1,12 +1,13 @@
 package mathskills
 
 func StandardDeviation(data []int) int {
-	return Sqrt(Variance(data))
+	return int(Sqrt(Variance(data)))
 }
 
-func Sqrt(n int) int {
-	for i := 1; i <= n; i++ {
-		if i*i == n {
+func Sqrt(n int) float64 {
+	for i := float64(0); i <= float64(n); i += 0.001 {
+
+		if int(i*i) == n {
 			return i
 		}
 	}
